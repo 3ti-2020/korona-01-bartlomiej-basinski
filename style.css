@@ -1,24 +1,19 @@
+/* Strona główna */
 .container{
    
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-columns: repeat(9 , 1fr);
-    grid-template-rows: repeat(12 , 1fr);
+    grid-template-columns: 1fr  10fr ;
+    grid-template-rows: 1fr  4fr 1fr;
     grid-template-areas: 
-    "header header header header header header header header header"
-    "header header header header header header header header header"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar main main main main main main main main"
-    "sidebar footer footer footer footer footer footer footer footer"
-    "sidebar footer footer footer footer footer footer footer footer"
+    "header header "
+    "sidebar main"
+    "footer footer"
     ;
+}
+.galeria{
+    font-size: 25px;
 }
 .header{
     background: lightblue;
@@ -32,14 +27,14 @@
 .main{
     grid-area: main ;
     background: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
 }
 .sidebar{
     grid-area: sidebar;
     background: lightsalmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .footer{
     background: navajowhite;
@@ -49,7 +44,173 @@ h1::selection{
     color: white;
     background: black;
 }
-.buttons{
-    margin: 20px;
+.linki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    padding: 10px;
+    background:lightgrey;
+    width: 150px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.tabela{
+    border: solid black 2px;
+    font-size:  5vh;
+    
+
 }
 
+
+/* Zdięcia samochodów */
+.container_samochody{
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows:   4.6fr 2fr 2fr ;
+    grid-template-areas: 
+    
+    "obrazki_s ferrari"
+    "obrazki_s BMW"
+    "obrazki_s Audi"
+    ;
+}
+
+.margines{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.obrazki_s{
+    grid-area: obrazki_s;
+    background: lightgreen;
+    
+}
+.ferrari{
+    background: lightcoral;
+    grid-area: ferrari;
+}
+.BMW{
+    background: lightskyblue;
+    grid-area: BMW;
+}
+.Audi{
+    background: lime;
+    grid-area: Audi;
+}
+.tabela_av{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+.col_av{
+    background: chartreuse;
+    border: solid black 2px;
+    font-size: 40px;
+}
+.tabela_it{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 23vh;
+}
+.col_it{
+    background: chartreuse;
+    border: solid black 2px;
+    font-size: 40px;
+}
+.tabela_BMW{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+}
+
+.col_BMW{
+    background: burlywood;
+    border: solid black 2px;
+    font-size: 40px;
+}
+.tabela_au{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+}
+
+.col_au{
+    background: dimgrey;
+    border: solid black 2px;
+    font-size: 40px;
+}
+.linki_s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    padding: 10px;
+    background:lightgrey;
+    margin-left: 150px;
+}
+/* Zdięcia Gór */
+.container_g{
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows:   1fr 1fr 1fr ;
+    grid-template-areas: 
+    
+    "obrazki_G tabela_g1"
+    "obrazki_G tabela_g2"
+    "obrazki_G tabela_g3"
+    ;
+}
+.obrazki_G{
+    background: goldenrod;
+    grid-area: obrazki_G;
+}
+.tabela_g1{
+    background: greenyellow;
+    grid-area: tabela_g1;
+}
+.tabela_g2{
+    background: rgb(54, 75, 23);
+    grid-area: tabela_g2;
+}
+.tabela_g3{
+    background: rgb(36, 43, 141);
+    grid-area: tabela_g3;
+}
+/* Zdięcia Miast */
+.container_M{
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows:   1fr 1fr 1fr ;
+    grid-template-areas: 
+    
+    "obrazki_m tabela_m1"
+    "obrazki_m tabela_m2"
+    "obrazki_m tabela_m3"
+    ;
+}
+.obrazki_M{
+    background: goldenrod;
+    grid-area: obrazki_m;
+}
+.tabela_m1{
+    background: greenyellow;
+    grid-area: tabela_m1;
+}
+.tabela_m2{
+    background: rgb(54, 75, 23);
+    grid-area: tabela_m2;
+}
+.tabela_m3{
+    background: rgb(36, 43, 141);
+    grid-area: tabela_m3;
+}
