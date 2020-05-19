@@ -1,0 +1,12 @@
+
+.moja_tabela{
+    border-collapse:collapse ;
+    border: 1px solid black;
+}
+.row {
+    background: lightblue ;
+}
+.col {
+    border:2px solid black ;
+}
+
