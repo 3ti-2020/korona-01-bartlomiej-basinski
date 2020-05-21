@@ -11,9 +11,9 @@
 <div class="obrazki_G">
     <table>
         <tr>
-        <td><a class="linki_s" href="index.html">Strona Główna</a></td>
-        <td><a class="linki_s" href="zdięcia_samochody.html">Zdięcia Samochody</a></td>
-        <td><a class="linki_s" href="zdięcia_miast.html">Zdięcia Miast</a></td>
+        <td><a class="linki_s" href="index.php">Strona Główna</a></td>
+        <td><a class="linki_s" href="zdjęcia_samochody.php">zdjęcia Samochody</a></td>
+        <td><a class="linki_s" href="zdjęcia_miast.php">zdjęcia Miast</a></td>
     </tr>
     </table>
     <div class="margines">

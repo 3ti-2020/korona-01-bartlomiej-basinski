@@ -1,22 +1,47 @@
+th{
+    font-size: 20px;
+    border: solid black 2px;
+    background: lightgreen;
+}
+th:hover{
+    background: white;
+}
+img:hover{
+    border: solid red 5px;
+}
 /* Strona główna */
 .container{
    
     display: grid;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
-    grid-template-columns: 1fr  10fr ;
-    grid-template-rows: 1fr  4fr 1fr;
+    grid-template-columns: 1fr  10fr 2fr;
+    grid-template-rows: 1fr  4fr  1fr;
     grid-template-areas: 
-    "header header "
-    "sidebar main"
-    "footer footer"
+    "header header buttons"
+    "sidebar main main"
+    "footer footer footer"
     ;
+}
+.buttons{
+    grid-area: buttons;
+    background:lightblue ;
+    
+}
+.button_j{
+    margin: 10px;
+}
+.button_c{
+    margin: 10px;
+}
+.Wybierz{
+    margin: 10px;
 }
 .galeria{
     font-size: 25px;
 }
 .header{
-    background: lightblue;
+    background: #add8e6;
     grid-area: header;
     display: flex;
     justify-content: center;
@@ -26,7 +51,7 @@
 }
 .main{
     grid-area: main ;
-    background: lightgreen;
+    background: lightsalmon;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,15 +59,11 @@
 }
 .sidebar{
     grid-area: sidebar;
-    background: lightsalmon;
+    background: #90ee90 ;
 }
 .footer{
-    background: navajowhite;
+    background: #ffdead;
     grid-area: footer;
-}
-h1::selection{
-    color: white;
-    background: black;
 }
 .linki{
     display: flex;
@@ -66,7 +87,7 @@ h1::selection{
 /* Zdięcia samochodów */
 .container_samochody{
     display: grid;
-    height: 150vh;
+    height: 162vh;
     grid-template-columns: 2fr 3fr;
     grid-template-rows:   4.6fr 2fr 2fr ;
     grid-template-areas: 
@@ -82,7 +103,7 @@ h1::selection{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .obrazki_s{
     grid-area: obrazki_s;
@@ -92,6 +113,7 @@ h1::selection{
 .ferrari{
     background: lightcoral;
     grid-area: ferrari;
+    
 }
 .BMW{
     background: lightskyblue;
@@ -105,29 +127,39 @@ h1::selection{
     
     display: flex;
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 27vh;
+    margin-right: 40%;
 }
 .col_av{
     background: chartreuse;
     border: solid black 2px;
     font-size: 40px;
+    
+}
+.col_av:hover{
+    background: white;
 }
 .tabela_it{
     
     display: flex;
     justify-content: center;
     margin-top: 23vh;
+    margin-right: 40%;
 }
 .col_it{
     background: chartreuse;
     border: solid black 2px;
     font-size: 40px;
 }
+.col_it:hover{
+    background: white;
+}
 .tabela_BMW{
     
     display: flex;
     justify-content: center;
-    margin-top: 12vh;
+    margin-top: 13vh;
+    margin-right: 40%;
 }
 
 .col_BMW{
@@ -135,17 +167,24 @@ h1::selection{
     border: solid black 2px;
     font-size: 40px;
 }
+.col_BMW:hover{
+    background: white;
+}
 .tabela_au{
     
     display: flex;
     justify-content: center;
     margin-top: 12vh;
+    margin-right: 30%;
 }
 
 .col_au{
     background: dimgrey;
     border: solid black 2px;
     font-size: 40px;
+}
+.col_au:hover{
+    background: white;
 }
 .linki_s{
     display: flex;
